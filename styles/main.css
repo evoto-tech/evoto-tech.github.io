@@ -1,0 +1,33 @@
+body{
+  background: #ffffff;
+}
+
+.jumbo {
+  background-color: #eeeeee;
+  border-bottom: 1px solid #ddd;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+
+.jumbo img {
+  height: auto;
+  width: 65%;
+}
+
+.icon.bronze {
+  color: #cd7f32;
+}
+
+.icon.silver {
+  color: #C0C0C0;
+}
+
+.icon.gold {
+  color: #DAA520;
+}
+
+.icon.platinum {
+  color: #E5E4E2 ;
+}
