@@ -1,4 +1,5 @@
 #pricing-table {
+  height: 55vh;
   margin: 50px auto;
   text-align: center;
   width: 100%;
@@ -10,10 +11,41 @@
   background: #fff;      
   border: 1px solid #ddd;
   color: #333;
+  height: 100%;
   padding: 20px;
-  width: 25%;  
-  float: left;
+  width: 25%;
   position: relative;
+}
+
+@media only screen and (min-width: 900px) {
+  #pricing-table .plan {
+    float: left;
+    width: 25%;
+  }
+
+  #pricing-table .plan:nth-child(1) {
+    -moz-border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;        
+  }
+
+  #pricing-table .plan:nth-child(4) {
+    -moz-border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;        
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #pricing-table .plan {
+    -moz-border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    border-radius: 5px !important;    
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 #pricing-table .plan:hover {
@@ -29,17 +61,7 @@
   box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);    
 }
 
-#pricing-table .plan:nth-child(1) {
-  -moz-border-radius: 5px 0 0 5px;
-  -webkit-border-radius: 5px 0 0 5px;
-  border-radius: 5px 0 0 5px;        
-}
 
-#pricing-table .plan:nth-child(4) {
-  -moz-border-radius: 0 5px 5px 0;
-  -webkit-border-radius: 0 5px 5px 0;
-  border-radius: 0 5px 5px 0;        
-}
 
 #pricing-table h3 {
   font-size: 20px;
@@ -109,6 +131,10 @@
 #pricing-table li {
   border-top: 1px solid #ddd;
   padding: 10px 0;
+}
+
+#pricing-table li.empty {
+  text-indent: -999px;
 }
 
 #pricing-table .signup {
