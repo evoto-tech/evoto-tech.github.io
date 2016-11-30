@@ -1,9 +1,13 @@
 #pricing-table {
   height: 55vh;
-  margin: 50px auto;
+  margin: 5px auto 20px auto;
   text-align: center;
   width: 100%;
   overflow: visible;
+}
+
+#pricing-table.small {
+  height: 25vh;
 }
 
 #pricing-table .plan {
@@ -20,8 +24,15 @@
 @media only screen and (min-width: 900px) {
   #pricing-table .plan {
     float: left;
+  }
+
+  #pricing-table.four .plan {
     width: 25%;
   }
+
+  #pricing-table.three .plan {
+    width: 33%;
+  }  
 
   #pricing-table .plan:nth-child(1) {
     -moz-border-radius: 5px 0 0 5px;
@@ -121,6 +132,15 @@
   -webkit-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
   box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
   line-height: 90px;
+}
+
+#pricing-table h3 span.double {
+  line-height: 73px;  
+}
+
+#pricing-table h3 span small {
+  position: relative;
+  top: -54px;
 }
 
 #pricing-table ul {
